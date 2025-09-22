@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index Document</title>
+    <style>
+        .index-container{
+            position: relative;
+        }
+        .man{
+            z-index: 10;
+
+        }
+        .ring{
+            top: -90px;
+            z-index: 1;
+        }
+        .water{
+            top: -190px;
+        }
+    </style>
+</head>
+<body>
+    <h3>z-index!!!</h3>
+    <p>This Z-index are basically used for overflow one object onto the another object </p>
+
+    <br>
+    <br>
+
+    <div class="index-container man"><img src="assets/boy.svg" alt=""></div><br>
+    <div class="index-container ring"><img src="assets/ring.svg" alt=""></div><br>
+    <div class="index-container water"><img src="assets/water.svg" alt=""></div>
+</body>
+</html>
