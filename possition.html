@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Possition Document</title>
+    <style>
+        .possitional{
+            border: 2px solid red;
+        }
+        .isd{
+            border: 2px dotted blue;
+            width: 200px;
+        }
+        /* .isd2{
+            border: 2px dotted orchid;
+            position: relative;
+            left: 50px;
+            top: -30px;
+           
+        } */
+
+        /* This one is for absolute */
+        /* .isd2{
+            border: 2px dotted greenyellow;
+            position: absolute;
+            top: 30px;
+            left: 40px;
+        }  */
+          /* This one is for Sticky */
+          /* .isd2{
+            border: 2px dotted red;
+            position: sticky;
+            top: 20px;
+            left: 130px;
+          } */
+
+          /* This one is for fixed  */
+          .isd2{
+            border: 2px dotted red;
+            position: fixed;
+            top: 20px;
+            left: 130px;
+          }
+          .demo{
+            width: 500px;
+            height: 550px;
+            border: 2px solid blue;
+          }
+    </style>
+</head>
+<body>
+    <h3>Possition!</h3>
+
+    <ol>
+        <!-- Flow Possition Related -->
+        <li>Static : <small>This is the by default possition of every image or object .</small></li>
+        <li>Relative: <small> this will not loss his possitional space , but it can move left,right,up or down by maintaining his own possitional space .</small></li>
+        <li>Absolute: <small>This will not able to hold his possition anymore ,it will start form the root of the page or from the root of the current parent div,  but it can move itself from left to right and up to bottom.</small></li>
+        <!-- Scroolbar tools possition -->
+        <li>Sticky: <small>This is a fixed possition on its div range . while scrolling the whole page up to bottom . </small></li>
+        <li>Fixed: <small>it will fixed all over the page while we scrolling up or down the page at we want for , but the image are fixed over the page here .</small></li>
+    </ol>
+    
+    <div class="possitional">
+        
+        <img class="isd isd1" src="assets/card-icon.png" alt="card"><br>
+        <img class="isd isd2" src="assets/hero.png" alt="hero"><br>
+        <img class="isd isd3" src="assets/queatation.JPG" alt="queatation"><br>
+        <img class="isd isd1" src="assets/card-icon.png" alt="card"><br>
+        <img class="isd isd5" src="assets/hero.png" alt="hero"><br>
+        <img class="isd isd3" src="assets/queatation.JPG" alt="queatation">
+    </div>
+    <div>
+        <img class="isd isd2" src="assets/hero.png" alt="hero"><br>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+    </div>
+</body>
+</html>
