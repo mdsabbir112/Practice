@@ -1,0 +1,31 @@
+h3:hover{
+    color: blue;
+    background: black;
+  
+}
+
+input:focus{
+    color: red;
+    /* outline: 0; */
+}
+/* link er through te kono website amra visit korci ki na ta hide korte ai command use kora lage  */
+a:visited{
+    color: blue
+}
+/* jodi amra 1st child take color korte chai tobe */
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: skyblue;
+}
+
+/* jor sonkha gulare color korar jonno */
+
+li:nth-child(2n){
+    color: red;
+}
+/* bejor sonkha color korar jonno  */
+li:nth-child(3n+1){
+    color: orange;
+}
