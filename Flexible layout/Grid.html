@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Document</title>
+    <style>
+        .grid{
+            border: 2px solid yellow;
+            display: grid;
+            /* grid-template-columns: 200px 100px 200px 100px; */
+            grid-template-columns: repeat(3, 100px) 200px;
+            /* grid-template-columns: repeat(3,1fr) 200px 200px ; */
+            /* grid-template-rows: 40px 40px 40px 40px; */
+            /* grid-template-rows: repeat(5, 100px) 200px; */
+            gap: 30px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .container{
+            border: 2px dotted red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>Grid Layout -> it works Bi-directionally </h3>
+
+    <div class="grid">
+        <div class="container">Grid-1</div>
+        <div class="container">Grid-2</div>
+        <div class="container">Grid-3</div>
+        <div class="container">Grid-4</div>
+        <div class="container">Grid-5</div>
+        <div class="container">Grid-6</div>
+        <div class="container">Grid-7</div>
+        <div class="container">Grid-8</div>
+        <div class="container">Grid-9</div>
+        <div class="container">Grid-10</div>
+        <div class="container">Grid-11</div>
+        <div class="container">Grid-12</div>
+        <div class="container">Grid-13</div>
+        <div class="container">Grid-14</div>
+        <div class="container">Grid-15</div>
+        <div class="container">Grid-16</div>
+        <div class="container">Grid-17</div>
+        <div class="container">Grid-18</div>
+        <div class="container">Grid-19</div>
+        <div class="container">Grid-20</div>
+    </div>
+</body>
+</html>
