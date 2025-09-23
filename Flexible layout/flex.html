@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Document</title>
+    <style>
+        nav{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-around;
+        }
+        nav a{
+            text-decoration: none;
+            color: blueviolet;
+            
+        }
+        .navi{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+       .main{
+        height: 300PX;
+        border: 2px dotted red;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+       }
+       .container{
+        border: 1px solid blueviolet;
+        width: 50px;
+        height: 50px;
+        
+       }
+       .login-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .log{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navi">
+            <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Blogs</a>
+        <a href="">Contacts</a>
+        </div>
+        <a href="">Login</a>
+    </nav>
+    <h3>This work is based on Flex , Flex-direction , justify-content , align-item , flex-wrap etc</h3>
+
+    <section class="main">
+    <div class="container">image-1</div>
+    <div class="container">image-2</div>
+    <div class="container">image-3</div>
+    <div class="container">image-4</div>
+    <div class="container">image-5</div>
+    <div class="container">image-6</div>
+    <div class="container">image-7</div>
+    <div class="container">image-8</div>
+    </section>
+
+    <section class="login">
+        <div class="login-details">
+            <h3>PLease Login</h3>
+            <form class="log" action="">
+                <!-- learn how to add requred value for the field that i want for  -->
+                <input type="email" name="" id="" placeholder="Enter Email" required>
+                <input type="password" name="" id="" placeholder="Your Password" required>
+             <input type="submit" value="login">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
