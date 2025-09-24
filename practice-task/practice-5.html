@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-5 Document</title>
+    <style>
+        .container{
+            border: 2px dotted blue;
+            /* display: flex; */
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            flex-direction: column;
+            /* gap:20px; */
+            padding: 10px;
+
+        }
+        .food-1{
+            width: 100%;
+            display: flex;
+            gap:20px;
+            border-radius: 10px;
+             /* box-shadow: 4px 4px 10px black; */
+            padding-bottom: 10px;
+             padding: 3px;
+        }
+        .food-1 img{
+            width: 50%;
+            height: 50vh;
+            /* border-radius: 10px; */
+            /* object-fit: cover; */
+        }
+        .food-2{
+             display: flex;
+            gap:20px;
+            /* box-shadow: 4px 4px 10px black; */
+            border-radius: 10px;
+            padding: 3px;
+        }
+        .food-2 img{
+            width: 50%;
+            height: 50vh;
+            /* border-radius: 10px; */
+            /* object-fit: cover; */
+        }
+        button{
+            border-radius: 5px;
+            background-color: blueviolet;
+            color: aliceblue;
+            text-align: center;
+            
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                
+            }
+            .food-1{
+                flex-direction: column;
+            }
+            .food-1 img{
+                width: 100%;
+
+            }
+            .food-2{
+                flex-direction: column-reverse;
+            }
+            .food-2 img{
+                  width: 100%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="food-1">
+                <img src="../assets/food.jpg" alt="Food">
+                <div class="food1-1">
+                    <h3>Post Title Will be Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corporis fugiat eius? Quae quisquam ipsum sunt a officiis! Voluptatibus explicabo odio tempora autem modi dolorem eligendi cumque culpa quibusdam aut, consequuntur fugiat eum voluptatum facere in expedita ipsum dicta? Quisquam velit voluptatibus et, eaque necessitatibus dignissimos exercitationem quidem quo hic sit, repudiandae mollitia? Libero dolores cum, eaque reprehenderit amet recusandae aliquam minus numquam voluptatem provident asperiores sed officia iste fuga odit qui tempore porro voluptatum deserunt quasi repellendus saepe voluptatibus esse itaque. Rem, voluptates, obcaecati hic assumenda cumque nam ab tempora dolor doloribus provident et sapiente. Voluptate ad cupiditate autem optio perferendis debitis, molestias quaerat distinctio odit minima placeat, eaque in dolorem asperiores, fuga vitae eveniet odio dignissimos a. Consequuntur? <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat officiis dolorem corrupti fuga eligendi placeat saepe nihil voluptatibus neque deleniti sapiente qui sit dolore sint esse ea quo iure, ut suscipit cum exercitationem animi delectus. Ad natus, magnam repudiandae nulla aspernatur aliquid reprehenderit ipsam, commodi dolorem nemo asperiores perferendis laborum!</p>
+                    
+                </div>
+            </div>
+            <div class="food-2">
+                
+                <div class="food2-2">
+                    <h3>Post Title Will be Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam tempore atque vitae quas ipsa nobis molestiae tempora reiciendis! Suscipit quis voluptatum corrupti quod omnis placeat quo amet, aliquid magnam. Doloribus perspiciatis, illo voluptatum alias iure dolore magni sequi pariatur ipsa quod perferendis sint expedita fuga nam rem consectetur incidunt asperiores iste facere modi ex quia atque. Fugiat suscipit optio culpa temporibus sunt quas hic placeat, atque tempore quaerat in aperiam quasi, soluta est ea nemo? Ducimus sit saepe fuga repudiandae. Temporibus, porro maxime. Assumenda odio dolor, officiis in animi, provident vero fugit distinctio optio nesciunt, asperiores labore. Debitis nam similique et, perferendis, impedit ducimus alias laudantium repellat, corrupti quisquam tempora deleniti officiis iusto eaque recusandae. Aperiam nostrum distinctio fugiat dicta?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi labore perspiciatis hic quaerat omnis reiciendis atque consequatur maiores facere recusandae consequuntur eveniet minus dolorem nisi delectus expedita aut voluptate officiis laborum aperiam voluptas, consectetur veniam? Ipsam impedit iusto, et quia in, nihil natus dicta dignissimos a ad eaque! Rerum.</p>
+                   
+                </div>
+                <img src="../assets/food.jpg" alt="Food-2">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
