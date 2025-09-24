@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-4 Document</title>
+    <style>
+        .container{
+            border: 2px dotted blue;
+            /* display: flex; */
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            flex-direction: column;
+            gap:20px;
+            padding: 10px;
+
+        }
+        .food-1{
+            display: flex;
+            gap:20px;
+            border-radius: 10px;
+             box-shadow: 4px 4px 10px black;
+            padding-bottom: 10px;
+             padding: 3px;
+        }
+        .food-1 img{
+            width: 40%;
+            height: 50vh;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .food-2{
+             display: flex;
+            gap:20px;
+            box-shadow: 4px 4px 10px black;
+            border-radius: 10px;
+            padding: 3px;
+        }
+        .food-2 img{
+            width: 40%;
+            height: 50vh;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        button{
+            border-radius: 5px;
+            background-color: blueviolet;
+            color: aliceblue;
+            text-align: center;
+            
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                
+            }
+            .food-1{
+                flex-direction: column;
+            }
+            .food-1 img{
+                width: 100%;
+
+            }
+            .food-2{
+                flex-direction: column;
+            }
+            .food-2 img{
+                  width: 100%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="food-1">
+                <img src="../assets/food.jpg" alt="Food">
+                <div class="food1-1">
+                    <h3>Post Title Will be Here</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat officiis dolorem corrupti fuga eligendi placeat saepe nihil voluptatibus neque deleniti sapiente qui sit dolore sint esse ea quo iure, ut suscipit cum exercitationem animi delectus. Ad natus, magnam repudiandae nulla aspernatur aliquid reprehenderit ipsam, commodi dolorem nemo asperiores perferendis laborum!</p>
+                    <button>Read Me </button>
+                </div>
+            </div>
+            <div class="food-2">
+                <img src="../assets/food-2.jpg" alt="Food-2">
+                <div class="food2-2">
+                    <h3>Post Title Will be Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit modi labore perspiciatis hic quaerat omnis reiciendis atque consequatur maiores facere recusandae consequuntur eveniet minus dolorem nisi delectus expedita aut voluptate officiis laborum aperiam voluptas, consectetur veniam? Ipsam impedit iusto, et quia in, nihil natus dicta dignissimos a ad eaque! Rerum.</p>
+                    <button>Read Me</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
