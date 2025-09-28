@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container{
+            border: 2px solid black;
+        }
+        .content{
+            
+        }
+         .bat{
+            transition: transform 0.3s ease-in;
+         }
+         .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            left: 430px;
+            transition: transform 1s ease-out 0.2s ;
+         }
+
+        .container:hover .bat {
+            transform: rotate(-80deg);
+            transform-origin: top right;
+        }
+        .container:hover .ball{
+            transform: translate(1000px, -500px);
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="content">
+            <img src="../assets/bat.png" class="bat" alt="">
+        </div>
+
+        <div class="ball">
+
+        </div>
+    </section>
+</body>
+</html>
