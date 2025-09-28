@@ -25,9 +25,16 @@
             /* display: none ; */
             transform: scale(0.5);
             /* transform: scale(0.25, 0.5); */
-            transform: rotate(45deg);
+            transform: scale(0.5) rotate(45deg) skew(20deg);
+            /* transform: skew(20deg); */
+            transform:skewY(20deg);
+              animation: mymove 5s infinite;
 
         }
+        
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
     </style>
 </head>
 <body>
