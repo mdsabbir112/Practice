@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and calc() Document</title>
+    <style>
+        /* This root command is used for declare the variable on the overall head of the website , for that reason we are able to done some awsome 
+        work on the website */
+        :root{
+            --primary-color: orange;
+            --font-size: 12px;
+            --font-weight: 600;
+        }
+        h3{
+           color: aquamarine;
+
+        }
+        h5{
+            background-color: var(--primary-color);
+        }
+        .container{
+            color:blueviolet;
+            border: 2px solid sandybrown;
+            padding: 10px;
+            font-size: var(--font-size);
+            width: calc(100% - 200px);
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 200px calc(100% - 200px - 50px);
+            gap: 50px;
+        }
+        .sidebar{
+            width: 100%;
+            height: 600px;
+            background-color: gray;
+        }
+        .menu{
+            width: 100%;
+            height: 600px;
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <h3> This is md Sabbir hasan </h3>
+    <h5>This page is for understand the variable and calc()</h5>
+
+    <div class="container">
+        <h3>Now we test the method of varaiable </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aperiam officia error quos culpa suscipit illum aspernatur quis voluptatibus facere minima corporis deserunt sint tempora, expedita quia illo dolores esse amet non iusto obcaecati incidunt consequuntur aut. Eius, atque magni quaerat magnam impedit id autem laudantium, architecto, eaque illum repudiandae.</p>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+<h2>this is sabbir</h2>
+        </div>
+        <div class="menu">
+            <h2>this is  mofazzal</h2>
+
+        </div>
+    </div>
+</body>
+</html>
